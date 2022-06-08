@@ -1,16 +1,23 @@
-# Install
+# Requirements
 ```
-$ pip install pipenv
-$ pip install fastapi
-$ pip install uvicorn
+pip install pipenv
+```
+then 
+```
+pipenv install
 ```
 
-# Setup
+# MySQL setup
+## Log into MySQL as root
 ```
-$ pipenv install
+mysql -u root
+```
+## Create database
+```
+CREATE DATABASE dbms_project;
 ```
 
 # Serve
 ```
-$ pipenv run uvicorn main:app [--reload]
+pipenv run uvicorn main:app [--reload]
 ```
